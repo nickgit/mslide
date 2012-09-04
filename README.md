@@ -76,7 +76,9 @@ mSlide根据基础的路由配置，控制应用界面资源的加载，并可�
 - `customfile` 动画外壳需要加载的页面地址，不包括扩展名
 - `derection` 动画运动方向
 - `s1=val1&s2=val2` 处理hash中其他参数
+<br>
 hash参数的引入，应用于单个模板处理不同的业务逻辑。比如彩票业务中的数字彩投注页：<br>
+<br>
 ![图片](http://img04.taobaocdn.com/tps/i4/T1CdDKXaddXXcdin2S-300-225.gif)<br>
 可以看到，两个页面都是加载nbet.html模板，由hash参数lotype区分不同的业务逻辑，在mslideJS内部提供获取参数的方法，调用方法如下：<br>
 ![图片](http://img01.taobaocdn.com/tps/i1/T1SmPKXkdXXXc0vNv5-412-383.png)<br>
