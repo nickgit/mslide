@@ -68,6 +68,23 @@ href="demo/b"<br>
 此时将无法获取b页面地址，系统获取的customUrl为'..'而不是'../b'，正确的做法是将'../b'做URL编码，即href=”#..%2Fb/forward”。<br>
 **结论：**两种写法各有利弊，需要根据不同的应用场景，灵活选择！<br>
 
+### 二，URL解析规则
+根据mSlide配置的路由规则，URL解析的工作可做如下分解：<br>
+http://domain/app.html?switchAnim=true#customfile/direction/?s1=val1&s2=val2<br>
+domain/app.html 动画外壳页面<br>
+switchAnim=true 强制添加动画效果（可选）<br>
+customfile 动画外壳需要加载的页面地址，不包括扩展名<br>
+derection 动画运动方向<br>
+s1=val1&s2=val2 处理hash中其他参数<br>
+hash参数的引入，应用于单个模板处理不同的业务逻辑。比如彩票业务中的数字彩投注页：<br>
+![图片](http://img04.taobaocdn.com/tps/i4/T1CdDKXaddXXcdin2S-300-225.gif)<br>
+可以看到，两个页面都是加载nbet.html模板，由hash参数lotype区分不同的业务逻辑，在mslideJS内部提供获取参数的方法，调用方法如下：<br>
+![图片](http://img01.taobaocdn.com/tps/i1/T1SmPKXkdXXXc0vNv5-412-383.png)<br>
+类似于后端模板的使用方法，单个模板根据不同的查询参数可以处理不同的业务逻辑和显示。
+
+## TODO
+- 更多的动画效果配置，如fade、pop、flip、swap等
+- 其他功能
 
 
 
