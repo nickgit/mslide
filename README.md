@@ -77,6 +77,7 @@ mSlide根据基础的路由配置，控制应用界面资源的加载，并可�
 - `derection` 动画运动方向
 - `s1=val1&s2=val2` 处理hash中其他参数
 <br>
+<br>
 hash参数的引入，应用于单个模板处理不同的业务逻辑。比如彩票业务中的数字彩投注页：<br>
 <br>
 ![图片](http://img04.taobaocdn.com/tps/i4/T1CdDKXaddXXcdin2S-300-225.gif)<br>
