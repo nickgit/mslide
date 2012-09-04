@@ -38,7 +38,7 @@ mSlide根据基础的路由配置，控制应用界面资源的加载，并可�
 使用mSlide组织代码，业务页面中超链接书写需要遵循一些简单的规则。
 
 #### 1，添加自定义属性
-![代码示例](http://img02.taobaocdn.com/tps/i2/T1.dTKXc0eXXX4DUMP-761-30.png)</br>
+![代码示例](http://img02.taobaocdn.com/tps/i2/T1.dTKXc0eXXX4DUMP-761-30.png)<br>
 自定义属性说明：<br>
 ##### dataRole：
 是否通过内联的方式加载页面 ，只支持inline，在缺省情况下，将按照传统方式跳转URL
