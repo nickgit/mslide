@@ -53,7 +53,7 @@ href="b"<br>
 href="demo/b"<br>
 ##### animDir:
 页面推送方向，可选值为forward、back。<br>
-需要注意的是，forward、back不仅仅代表向前滑动、向后滑动，也有可能渐隐、渐现。</br>
+需要注意的是，forward、back不仅仅代表向前滑动、向后滑动，也有可能渐隐、渐现。<br>
 动画效果的选择，需要在程序初始化时配置。
 
 ##### checked:
@@ -64,7 +64,7 @@ href="demo/b"<br>
 自定义属性不是必须的，更加直接有效的做法是：<br>
 ![代码示例](http://img03.taobaocdn.com/tps/i3/T1A4vJXeNlXXXkfubZ-440-33.png)<br>
 这种写法会遇到一个棘手的问题，即目标URL中包含'/'时，需要使用URL编码，解码工作在加载页面时由mSlide系统自动完成。例如：<br>
-![代码示例](http://img02.taobaocdn.com/tps/i2/T1bijKXe8dXXXyoxHU-423-32.png)
+![代码示例](http://img02.taobaocdn.com/tps/i2/T1bijKXe8dXXXyoxHU-423-32.png)<br>
 此时将无法获取b页面地址，系统获取的customUrl为'..'而不是'../b'，正确的做法是将'../b'做URL编码，即href=”#..%2Fb/forward”。<br>
 **结论：**两种写法各有利弊，需要根据不同的应用场景，灵活选择！<br>
 
