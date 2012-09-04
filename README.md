@@ -13,7 +13,7 @@ mSlide是一款基于seajs、zepto、backbone的动画插件，在传统多页�
 mSlide根据基础的路由配置，控制应用界面资源的加载，并可利用seajs天然沙箱隔离子业务逻辑。<br>
 **配置如下：**<br>
 ![代码示例](http://img01.taobaocdn.com/tps/i1/T1YMPJXdFjXXaVsw6A-575-147.png)<br>
-**注：**mslide的路由配置不提供扩展选项，并且最多支持三级查询，比如http://domain/app.html#path/direction/s3/s4将不会执行任何回调。
+**注：**mslide的路由配置不提供扩展选项，并且最多支持三级查询，比如`http://domain/app.html#path/direction/s3/s4`将不会执行任何回调。
 
 ## 插件特点
 - 自动检测系统平台，为android平台做优雅降级处理
@@ -71,11 +71,11 @@ mSlide根据基础的路由配置，控制应用界面资源的加载，并可�
 ### 二，URL解析规则
 根据mSlide配置的路由规则，URL解析的工作可做如下分解：<br>
 `http://domain/app.html?switchAnim=true#customfile/direction/?s1=val1&s2=val2`<br>
-`domain/app.html 动画外壳页面<br>
-switchAnim=true 强制添加动画效果（可选）<br>
-customfile 动画外壳需要加载的页面地址，不包括扩展名<br>
-derection 动画运动方向<br>
-s1=val1&s2=val2 处理hash中其他参数<br>`
+- `domain/app.html` 动画外壳页面
+- `switchAnim=true` 强制添加动画效果（可选）
+- `customfile` 动画外壳需要加载的页面地址，不包括扩展名
+- `derection` 动画运动方向
+- `s1=val1&s2=val2` 处理hash中其他参数
 hash参数的引入，应用于单个模板处理不同的业务逻辑。比如彩票业务中的数字彩投注页：<br>
 ![图片](http://img04.taobaocdn.com/tps/i4/T1CdDKXaddXXcdin2S-300-225.gif)<br>
 可以看到，两个页面都是加载nbet.html模板，由hash参数lotype区分不同的业务逻辑，在mslideJS内部提供获取参数的方法，调用方法如下：<br>
