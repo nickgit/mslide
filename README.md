@@ -10,15 +10,9 @@ mSlide是一款基于seajs、zepto、backbone的动画插件，在传统多页�
 假设依次满足上述条件，那么你真的很适合用这款动画插件
 
 ## 工作原理
-mSlide根据基础的路由配置，控制应用界面资源的加载，并可利用seajs天然沙箱隔离子业务逻辑。
-**配置如下：**
-'routes: {
-	//hash为空时，应用初始化
-	'': 'init', 
-	':customurl/:dir': '_detail',
-	//用于处理相同模板处理不同的业务逻辑，比如 #a.html/back/?lotype=ssq
-	':customurl/:dir/:param': '_detail' 
-}'
+mSlide根据基础的路由配置，控制应用界面资源的加载，并可利用seajs天然沙箱隔离子业务逻辑。<br>
+**配置如下：**<br>
+![代码示例](http://img01.taobaocdn.com/tps/i1/T1YMPJXdFjXXaVsw6A-575-147.png)
 *注：*mslide的路由配置不提供扩展选项，并且最多支持三级查询，比如http://domain/app.html#path/direction/s3/s4将不会执行任何回调。
 
 ## 插件特点
@@ -30,11 +24,4 @@ mSlide根据基础的路由配置，控制应用界面资源的加载，并可�
 
 ## 使用指南
 1,引入资源文件
-'
-<link href="http://b.ued.taobao.net/a.tbcdn.cn/apps/lottery/mslide/css/slide.css" type="text/css" rel="stylesheet" />
-<script src="http://b.ued.taobao.net/a.tbcdn.cn/apps/lottery/mslide/js/lib/sea.js"></script>
-<script src="http://b.ued.taobao.net/a.tbcdn.cn/apps/lottery/mslide/js/lib/zepto.js"></script>
-<script src="http://b.ued.taobao.net/a.tbcdn.cn/apps/lottery/mslide/js/lib/underscore.js"></script>
-<script src="http://b.ued.taobao.net/a.tbcdn.cn/apps/lottery/mslide/js/lib/backbone.js"></script>
-'
 
